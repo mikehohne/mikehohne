@@ -31,6 +31,8 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
+
+
 #project-pics {
   width: 300px;
   height: 250px;
@@ -38,6 +40,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 5rem;
   border: 3px solid black;
   transition: border .5s ease-out;
+  background-color: rgb(199, 195, 193);
 }
 
 #project-pics:hover {
@@ -84,6 +87,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-links:hover {
+  cursor: default;
   background-color: #FDF3E7;
   color: rgb(187, 43, 29);
 }
@@ -102,9 +106,15 @@ body::-webkit-scrollbar-thumb {
   background-clip: padding-box;
 }
 
+#project-links {
+  text-decoration: none;
+  color: black;
+}
+
 #mediums {
   text-decoration: none;
 }
+
 
 
 @media only screen and (max-width: 1200px){
