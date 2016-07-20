@@ -1,0 +1,95 @@
+body {
+  background-color: #FDF3E7;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/*picture*/
+
+#profile-pic {
+  width: 400px;
+  height: 350px;
+  border-radius: 5%;
+  transition-property: opacity;
+  transition-duration: 3s;
+  opacity: .3;
+}
+
+#profile-pic:hover {
+  opacity: 1;
+}
+
+#project-pics {
+  width: 300px;
+  height: 250px;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  border: none;
+  transition: border .5s ease-out;
+}
+
+#project-pics:hover {
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+.container {
+  display: inline-block;
+}
+ /*links, social and router links*/
+#links {
+  margin-left: 1rem;
+  font-size: 4rem;
+  background-color: rgb(68, 69, 69);
+  color: white;
+  transition: margin-left 2s ease-out;
+}
+
+
+#links:hover {
+  background-color: red;
+  color: white;
+  margin-left: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.social-links {
+  margin: 1rem;
+}
+
+#about-links {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: rgb(68, 69, 69);
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 1s ease-out, color 1s ease-out;
+}
+
+#about-links:hover {
+  background-color: #FDF3E7;
+  color: red;
+}
+
+.projects {
+  padding-top: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  background-image: url('http://i.imgur.com/b6hSTW4.jpg');
+  background-size: cover;
+  background-position: left;
+  background-color: transparent;
+}
+
+#mediums {
+  text-decoration: none;
+}

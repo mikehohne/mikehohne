@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myBlog">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body ng-controller="mainCtrl">
+  <div class="container-fluid text-center">
+    <div class="info-container">
+      <img src="./images/mike-bio.jpg" alt="" id="profile-pic" />
+      <h1>Mike Hohne <small>Developer</small></h1>
+      <br>
+      <button class="btn" id="links" type="button" name="button" ui-sref="home">home</button>
+      <button class="btn" id="links" type="button" name="button" ui-sref="about">about</button>
+      <button class="btn" id="links" type="button" name="button" ui-sref="contact">contact</button>
+    </div>
+<div class="container-fluid text-center">
+  <br>
+  <br>
+  <br>
+  <ui-view></ui-view>
+</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="./js/app.js" charset="utf-8"></script>
+  <script src="./js/mainCtrl.js" charset="utf-8"></script>
+  <script src="./js/mainServ.js" charset="utf-8"></script>
+</body>
+</html>
