@@ -1,12 +1,24 @@
 body {
   background-color: #FDF3E7;
   font-family: 'Raleway', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 /*picture*/
 
 #profile-pic {
+  margin-top: 2rem;
   width: 400px;
   height: 350px;
   border-radius: 5%;
@@ -24,7 +36,7 @@ body {
   height: 250px;
   margin-right: 5rem;
   margin-bottom: 5rem;
-  border: none;
+  border: 3px solid black;
   transition: border .5s ease-out;
 }
 
@@ -33,9 +45,7 @@ body {
   cursor: pointer;
 }
 
-.container {
-  display: inline-block;
-}
+
  /*links, social and router links*/
 #links {
   margin-left: 1rem;
@@ -63,33 +73,50 @@ body {
 }
 
 #about-links {
-  width: 10rem;
+  width: 15rem;
   height: 10rem;
   margin: 1rem;
-  background-color: rgb(68, 69, 69);
+  background-color: rgb(187, 43, 29);
   color: #fff;
-  border-radius: 50%;
+  border-radius: 15%;
   transition: background-color 1s ease-out, color 1s ease-out;
+  font-size: 2rem;
 }
 
 #about-links:hover {
   background-color: #FDF3E7;
-  color: red;
+  color: rgb(187, 43, 29);
 }
 
 .projects {
-  padding-top: 4rem;
+  padding-top: 5rem;
   list-style: none;
   display: flex;
-  justify-content: flex-start;;
+  justify-content: flex-start;
   flex-wrap: wrap;
   border: 2px solid black;
   background-image: url('http://i.imgur.com/b6hSTW4.jpg');
   background-size: cover;
   background-position: left;
   background-color: transparent;
+  background-clip: padding-box;
 }
 
 #mediums {
   text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .projects {
+    background-image: none;
+    display: inline;
+    border: none;
+  }
+
+  #project-pics {
+    width: 300px;
+    height: 250px;
+    margin-left: 2rem;
+  }
 }
